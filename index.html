@@ -3,11 +3,89 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+	<title>Ben Stahlman's Personal Home page</title>
+	<style>
+		html, body{
+			height: 100%;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+		}
+		body{
+			background-color:rgb(98, 252, 252);
+			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin: auto;
+		}
+		header, footer{
+			background-color: rgb(0, 0, 70);
+			text-align: center;
+			color: white;
+			padding: 05px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		header{
+			border-bottom: 7px solid;
+			border-color: cornflowerblue;
+			padding: 0 20px;
+		}
+		footer{
+			border-top: 7px solid;
+			border-color: cornflowerblue;
+		}
+		h1{
+			font-size: 35px;
+			transform: skewX(-5deg)
+		}
+		h2{
+			transform: skewX(-5deg);
+			font-style: bold;
+		}
+		main{
+			padding: 20px;
+			flex: 1;
+		}
+		nav a{
+			color:cyan
+		}
+		nav a:hover{
+			color:chartreuse;
+		}
+		
+	</style>
 </head>
 <body>
-	<h1>I'm Ben Stahlman and this is the root of my website.</h1>
-	<a href = "itis3135/">Click to go to ITIS3135 Site</a>
+	<header>
+		<h1>Ben Stahlman's personal website for ITIS3135</h1>
+	</header>
+	<main>
+		<h2>Personal Home Page</h2>
+		<p>Welcome to my personal website where I share my projects.</p>
+		<ul>
+			<li>There will be something here later probably</li>
+			<li>And here</li>
+			<li>And here</li>
+			<li>And so on im just trying to fill in space</li>
+			<li>I have the links in the footer and stuff</li>
+		</ul>
+
+	</main>
+	<footer>
+		<nav>
+			<a href = "itis3135/">Click to go to ITIS3135 Site</a>
+		</nav>
+		<nav>
+            <a href="https://webpages.charlotte.edu/bstahlma/">CLT Web</a>
+            ||
+            <a href="https://github.com/bstahlman27/bstahlman27.github.io">Github.com</a>
+            ||
+            <a href="https://bstahlman27.github.io/">Github.io</a>
+            ||
+            <a href="https://bstahlman27.github.io/itis3135/">ITIS3135</a>
+            ||
+            <a href="https://www.linkedin.com/in/benjamin-stahlman/">LinkedIn</a>
+        </nav>
+		<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+	</footer>
 </body>
 </html>
