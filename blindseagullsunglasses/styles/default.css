@@ -44,3 +44,9 @@ footer {
     padding: 10px;
     margin-top: 30px;
 }
+footer a{
+    color:#0055aa;
+}
+footer a:hover{
+    color:cornflowerblue;
+}
