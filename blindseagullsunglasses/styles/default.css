@@ -30,7 +30,7 @@ nav a{
     font-weight: bold;
 }
 nav a:hover{
-    background: #003366;
+    background: lightskyblue;
 }
 main{
     max-width: 800px;
@@ -45,8 +45,8 @@ footer {
     margin-top: 30px;
 }
 footer a{
-    color:#0055aa;
+    color:cornflowerblue;
 }
 footer a:hover{
-    color:cornflowerblue;
+    color:lightskyblue;
 }
