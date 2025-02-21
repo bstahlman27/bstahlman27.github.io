@@ -1,0 +1,42 @@
+
+img{
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+
+h2, h3{
+    font-family: "Comic Sans MS";
+}
+h1{
+    font-family: "Papyrus";
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+p{
+    font-family: "Times New Roman";
+    text-align: center;
+}
+ul{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.gets-background-color{
+    background-color: brown;
+    margin-top: 5px;
+    margin-bottom: 55px;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+.big{
+    font-family: "Papyrus";
+    color: orange;
+    font-size: 60px;
+    text-align: right;
+    border-top: 60px groove red;
+    border-right: 40px dashed blue;
+    border-bottom: 80px double green;
+    border-left: 20px dotted yellow;
+}
