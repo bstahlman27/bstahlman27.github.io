@@ -54,8 +54,8 @@ figure{
         font-size: 14px;
         text-align: left;
     }
-    h2, figure{
+    figure, figcaption{
         text-align: center;
     }
-    
+
 }
