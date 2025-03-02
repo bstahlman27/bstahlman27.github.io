@@ -17,7 +17,10 @@ a:hover{
 main{
     text-align: left;
     margin-left: 20%;
-    margin-right: 20%
+    margin-right: 20%;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 h2{
@@ -27,4 +30,32 @@ h2{
 figure{
     text-align: center;
     font-style: italic;
+}
+
+@media screen and (min-width: 600px) and (max-width: 980px){
+    main{
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    body{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 370px) and (max-width: 600px){
+    main{
+        width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+    }
+    body{
+        font-size: 14px;
+        text-align: left;
+    }
+    h2, figure{
+        text-align: center;
+    }
+    
 }
