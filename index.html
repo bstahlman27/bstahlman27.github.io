@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ben Stahlman's Personal Home page</title>
+	<title>Ben Stahlman's Personal Website | Home</title>
 	<style>
 		html, body{
 			height: 100%;
@@ -12,64 +12,132 @@
 			flex-direction: column;
 		}
 		body{
-			background-color:rgb(141, 253, 253);
-			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			max-width: 1200px;
+			margin: 0 auto;
+			background-color: #040404;
+			color: white;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 		}
 		header, footer{
-			background-color: rgb(0, 0, 70);
 			text-align: center;
-			color: white;
 			padding: 5px;
 			width: 100%;
 			box-sizing: border-box;
 		}
 		header{
-			border-bottom: 7px solid cornflowerblue;
+			border-bottom: 1px solid lightslategray;
 			padding: 0 20px;
+			color: #40f99b;
 		}
 		footer{
-			border-top: 7px solid cornflowerblue;
+			border-top: 1px solid lightslategray;
 		}
 		h1{
 			font-size: 35px;
 			transform: skewX(-5deg);
+			margin: 10px 0;
 		}
-		h2{
+		h2, h3{
 			transform: skewX(-5deg);
+			font-weight: bold;
+			color: #40f99b;
+		}
+		h3, h4{
+			margin-top: 0;
 			font-weight: bold;
 		}
 		main{
 			padding: 20px;
 			flex: 1;
 		}
-		footer a{
-			color:cyan;
-		}
-		footer a:hover{
-			color:chartreuse;
-		}
 		a{
-			color:rgb(32, 32, 172);
+			color: #40f99b;
+			text-decoration: none;
+			border-radius: 6px;
+			padding: 2px;
 		}
 		a:hover{
-			color:cornflowerblue;
+			background-color: #40f99b;
+			color: #030213;
+			transition: background-color 0.3s ease;
+		}
+		.about-section, .projects-section{
+			margin-top: 2rem;
+			background-color: #0a0a0a;
+			padding: 1rem;
+			border-radius: 8px;
+			border: 1px
+		}
+		.projects-section .card{
+			background-color:#040404;
+			color: white;
+			border-radius: 8px;
+			padding: 1rem;
+			margin-bottom: 1.5rem;
+		}
+		.projects-section .card h4{
+			margin-bottom: 0.5rem;
+			font-size: 1.2rem;
+		}
+		.card-links-row{
+			display: flex;
+			gap: 1rem;
+			margin-top: 1rem;
+		}
+		.card-links-row a{
+			flex: 1;
+			text-align: center;
+		}
+		.card-link{
+			display: block;
+			text-align: center;
+			font-weight: bold;
+			border-radius: 6px;
+			padding: 0.75rem 1rem;
+			border: 1px solid #40f99b;
+		}
+		.card-link:hover{
+			background-color: #40f99b;
+			transition: background-color 0.3s ease;
 		}
 		
 	</style>
 </head>
 <body>
 	<header>
-		<h1>Ben Stahlman's personal website for ITIS3135</h1>
+		<h1>Ben Stahlman's Personal Website</h1>
 	</header>
 	<main>
-		<h2>Personal Home Page</h2>
-		<p>Welcome to my personal website where I share my projects.</p>
-		<ul>
-			<li><a href = "itis3135/">Click to go to ITIS3135 Site</a></li>
-			<li><a href = "blindseagullsunglasses/">Click here for blindseagullsunglasses Site</a></li>
-			<li><a href="stahlmaninternational.com">Here is stahlmaninternational.com</a></li>
-		</ul>
-
+		<div class="home-section">
+			<h2>Home</h2>
+			<p>Welcome to my personal website to showcase some of my projects. </p>
+		</div>
+		<div class="about-section">
+			<h3>About Me</h3>
+			<p>Currently, I'm a CS Student at UNCC pursuing a BS in web/mobile development and software engineering. From Apex, I came to Charlotte a couple years ago for school. I am a hard working individual, and I see tasks through to completion. I don't like procrastinating, and getting things done as soon as possible is something that I take a lot of pride in. I have some experience coding from personal projects and classwork, but there's still plenty to learn and improve on.</p>
+		</div>
+		<div class="projects-section">
+			<h3>Projects</h3>
+			<div class="card">
+				<h4>GitHub Repositories</h4>
+				<a href="https://github.com/bstahlman27" class="card-link">Personal projects and code samples</a>
+			</div>
+			<div class="card">
+				<h4>ITIS 3135 Websites</h4>
+				<div class="card-links-row">
+					<a href = "itis3135/" class="card-link">ITIS3135 Course Site</a>
+					<a href = "blindseagullsunglasses/" class="card-link">blindseagullsunglasses</a>
+					<a href="stahlmaninternational.com" class="card-link">stahlmaninternational</a>
+				</div>
+			</div>
+			<div class="card">
+				<h4>Profiles/Contact Info</h4>
+				<div class="card-links-row">
+					<a href="https://www.linkedin.com/in/benjamin-stahlman/" class="card-link">LinkedIn</a>
+					<a href="mailto:bstahlman27@gmail.com" class="card-link">bstahlman27@gmail.com</a>
+				</div>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<nav>
@@ -83,8 +151,7 @@
             ||
             <a href="https://www.linkedin.com/in/benjamin-stahlman/">LinkedIn</a>
         </nav>
-		<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-		<p>Page built by <a href="../stahlmaninternational.com/">Stahlman International</a>, Certified in <a href="https://www.freecodecamp.org/certification/bstahlman27/responsive-web-design">Responsive Web Design</a> &copy; 2025</p>
+		<p>Page built by Ben Stahlman, Certified in <a href="https://www.freecodecamp.org/certification/bstahlman27/responsive-web-design">Responsive Web Design</a> &copy; 2025</p>
 	</footer>
 </body>
 </html>
