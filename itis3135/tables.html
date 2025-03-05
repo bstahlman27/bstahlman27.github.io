@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ben Stahlman's Blind Seagull || Tables</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Tables</h2>
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Barry Dairy</li>
+            <li>Hairy Larry</li>
+            <li>Scary Mary</li>
+            <li>Terry Very</li>
+            <li>Carrie Berry</li>
+            <li>Sherry Zary</li>
+            <li>Jerry Fairy</li>
+            <li>Gary Perry</li>
+        </ol>
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Barry Dairy</td>
+                <td>bdairy@gmail.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Hairy Larry</td>
+                <td>hairylarry12@yahoo.com</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Scary Mary</td>
+                <td>scarym33@hotmail.com</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Terry Very</td>
+                <td>tvery865@aol.com</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Carrie Berry</td>
+                <td>cb1234567@wah.net</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Sherry Zary</td>
+                <td>zarysherry@gmail.com</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Jerry Fairy</td>
+                <td>fairy7@wooooo.org</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Gary Perry</td>
+                <td>garytheplatypus@owca.org</td>
+                <td>10</td>
+            </tr>
+        </table>
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years</th>
+                        <th>Monthly Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Marketing</td>
+                        <td>Barry Dairy</td>
+                        <td>bdairy@gmail.com</td>
+                        <td>5</td>
+                        <td>4000</td>
+                    </tr>
+                    <tr>
+                        <td>Hairy Larry</td>
+                        <td>hairylarry12@yahoo.com</td>
+                        <td>6</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr>
+                        <td>Scary Mary</td>
+                        <td>scarym33@hotmail.com</td>
+                        <td>7</td>
+                        <td>6000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Sales</td>
+                        <td>Terry Very</td>
+                        <td>tvery865@aol.com</td>
+                        <td>4</td>
+                        <td>7000</td>
+                    </tr>
+                    <tr>
+                        <td>Carrie Berry</td>
+                        <td>cb1234567@wah.net</td>
+                        <td>5</td>
+                        <td>7500</td>
+                    </tr>
+                    <tr>
+                        <td>Sherry Zary</td>
+                        <td>zarysherry@gmail.com</td>
+                        <td>6</td>
+                        <td>8500</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">IT</td>
+                        <td>Jerry Fairy</td>
+                        <td>fairy7@wooooo.org</td>
+                        <td>7</td>
+                        <td>9000</td>
+                    </tr>
+                    <tr>
+                        <td>Gary Perry</td>
+                        <td>garytheplatypus@owca.org</td>
+                        <td>10</td>
+                        <td>10000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total Years of Service</th>
+                        <td>50</td>
+                        <td colspan="2">57000</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </figure>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
