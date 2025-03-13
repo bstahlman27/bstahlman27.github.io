@@ -5,66 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jersey Collecting</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    <favicon href="itis3135\hobby\images\jersey-favicon.jpg" type="image/x-icon">
     <style>
-        body{
+        body {
+            background-color: #040404;
+            color: #bafcdd;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
             background-color: #031927;
-            color: #9dd1f1;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
-        header{
-            background-color: #1a413c;
-            padding: 10px;
+        h1 {
+            color: #34d399;
+            margin: 0;
+            font-size: 2em;
         }
-        nav a{
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
             color: #a7f3d0;
             text-decoration: none;
-            padding: 10px;
+            font-size: 1.2em;
+            padding: 8px 12px;
+            transition: color 0.3s ease-in-out;
         }
-        nav a:hover{
+        nav a:hover {
             color: #06b6d4;
+            text-shadow: 0 0 8px #06b6d4;
         }
-        h1, h2{
-            color: #34d399;
-        }
-        main{
+        main {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
+            background-color: #102A27;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(157, 209, 241, 0.3);
         }
-        section{
+        section {
             display: none;
+            padding: 20px;
+            border-radius: 8px;
         }
-        footer{
-            background-color: #222;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        table{
+        table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
             font-size: 1.1em;
-            background-color: lightgrey;
+            background-color: #1B2F2D;
+            color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
-        th, td{
-            border: 2px solid black;
-            padding: 7px;
+        th, td {
+            border: 2px solid #508AA8;
+            padding: 10px;
             text-align: left;
         }
-        th{
-            background-color:#343a40;
-            color: lightgray;
+        th {
+            background-color: #508AA8;
+            color: white;
+            text-transform: uppercase;
         }
-        td{
-            color: #343a40;
+        tr:nth-child(even) {
+            background-color: #C8E0F4;
+            color: #031927;
         }
-        td:nth-child(4){
+        tr:nth-child(odd) {
+            background-color: #9DD1F1;
+            color: #031927;
+        }
+        td:nth-child(4) {
             font-weight: bold;
-            color: black;
+            color: #031927;
+            background-color: #9DD1F1;
         }
-        
+        tr:hover {
+            background-color: #508AA8;
+            color: white;
+            transition: background 0.3s ease-in-out;
+        }
+        footer {
+            background-color: rgb(116, 19, 19);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #C8E0F4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #7DD3FC;
+            text-shadow: 0 0 10px #7DD3FC;
+        }
+        figure {
+            text-align: center;
+            font-style: italic;
+            font-size: 90%;
+        }
+        .image-row{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .image-row img{
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -72,11 +127,17 @@
         <h1>Jersey Collecting</h1>
         <nav>
             <a href="#" onclick="showSection('home')">Home</a>
+            👕
             <a href="#" onclick="showSection('about')">My History</a>
+            👕
             <a href="#" onclick="showSection('schedule')">Schedule</a>
+            👕
             <a href="#" onclick="showSection('locations')">Locations</a>
+            👕
             <a href="#" onclick="showSection('how')">How-To</a>
+            👕
             <a href="#" onclick="showSection('why')">Why?</a>
+            👕
             <a href="#" onclick="showSection('ai-prompts')">AI Prompts</a>
         </nav>
     </header>
@@ -86,58 +147,66 @@
             <p>Sports fans show their passion for their teams in many different ways, and one of the most common ways is by buying a jersey. More than just a shirt, it's a way to connect with sports, teams, history, and players. Collectors show their fandom by  connecting with other fans, collectors, and community members by wearing their jerseys out, sharing their collection, and spending a ton on a shirt you wear a couple times a year.</p>
             <p>Some people like repping their favorite team or player, while others will go for 32 jerseys to get one from each team in the league. Some people have coat racks full of jerseys, some have one in their closet or hung on their wall. Regardless of our motives and collection so far, jersey collecting is something any sports fan can easily get into.</p>
             <figure>
-                <img src="images\Lenovo.jpg">
+                <img src="images/Lenovo.jpg">
                 <figcaption>My family showing off our jerseys after we got $20 nosebleed tickets</figcaption>
             </figure>
         </section>
         <section id="about">
             <h2>My Collecting History</h2>
-            <p>Playing sports growing up, I always had an interest in jerseys, especially when they had good stitching. As I grew up and out of the playing side of things, I got really into watching my favorite teams - the Pittsburgh Pirates (MLB), and my hometown's Carolina Hurricanes (NHL).</p>
+            <div class="image-row">
+                <p>Playing sports growing up, I always had an interest in jerseys, especially when they had good stitching. As I grew up and out of the playing side of things, I got really into watching my favorite teams - the Pittsburgh Pirates (MLB), and my hometown's Carolina Hurricanes (NHL).</p>
+                <figure>
+                    <img src="images/Alvarez_Front.jpg">
+                    <figcaption>Pirates Home jersey from when they were good (2013)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Necas_Front.jpg">
+                    <figcaption>The Hurricanes current Home jersey, their alternates from 2018-2023</figcaption>
+                </figure>
+                <p>Pretty soon after, I got a job, and I started to get some money. It was the summer, so I was watching the Pirates, who are terrible. Have been for years. If I was gonna get a jersey, I was gonna get one from a legend. So I did, a 1971 Roberto Clemente replica. Since we don't live near Pittsburgh, I didn't have much to do with this jersey, so I put it on my wall.</p>
+            </div>
             <figure>
-                <img src="images\Alvarez_Front.jpg">
-                <figcaption>Pirates Home jersey from when they were good (2013)</figcaption>
-            </figure>
-            <figure>
-                <img src="images\Necas_Front.jpg">
-                <figcaption>The Hurricanes current Home jersey, their alternates from 2018-2023</figcaption>
-            </figure>
-            <p>Pretty soon after, I got a job, and I started to get some money. It was the summer, so I was watching the Pirates, who are terrible. Have been for years. If I was gonna get a jersey, I was gonna get one from a legend. So I did, a 1971 Roberto Clemente replica. Since we don't live near Pittsburgh, I didn't have much to do with this jersey, so I put it on my wall.</p>
-            <figure>
-                <img src="images\Clemente_Back.jpg">
+                <img src="images/Clemente_Back.jpg">
                 <figcaption>Clemente Jersey, replica of the 1971-76 Home uniforms.</figcaption>
             </figure>
             <p>In the NHL, the Hurricanes were finally starting to play well for like the first time in 10 years, so me and my family decided we should finally go back to watch a game in person. At that point, I grew out of all my old Hurricanes merch because they were bad and there was no reason to buy anything else. So I decided I was gonna buy a jersey.</p>
             <p>My first jersey was a regular replica Sebastian Aho home jersey. It was nice, lasted me a good year or so of wearing to games, but everyone had one. Aho was easily the best player, and the replicas are definitely more affordable than the good stuff. I knew if I spent a little more and went after a little lesser known player, I could stand out more. So on black friday, with all the fun sales, I got another one - a Martin Necas black alternate (this was before he became the goat). Then one thing led to another, the Canes were playing in the Stadium Series, and I had to get one of those. So I did. A Jaccob Slavin, also authentic.</p>
-            <figure>
-                <img src="images\Aho_Back.jpg">
-                <figcaption>Hurricanes used this as their home jersey up until the beginning of the 23-24 season.</figcaption>
-            </figure>
-            <figure>
-                <img src="images\Necas_Back.jpg">
-                <figcaption>This is the old alternate, now the home</figcaption>
-            </figure>
-            <figure>
-                <img src="images\Slavin_Back.jpg">
-                <figcaption>The Canes wore these in the 2023 Stadium Series</figcaption>
-            </figure>
+            <div class="image-row">
+                <figure>
+                    <img src="images/Aho_Back.jpg">
+                    <figcaption>Hurricanes used this as their home jersey up until the beginning of the 23-24 season.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Necas_Back.jpg">
+                    <figcaption>This is the old alternate, now the home</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Slavin_Back.jpg">
+                    <figcaption>The Canes wore these in the 2023 Stadium Series</figcaption>
+                </figure>
+            </div>
             <p>This big wave of hockey jerseys led right into baseball season, where I thought, I should totally get another Pirates jersey. Authentic baseball jerseys go for like $400, so I decided to go the used route. I got a 2013 Home Pedro Alvarez for like $80 (absolute steal). Also, as a collector, I spend a lot of time on markets like eBay and Marketplace, and I found an old Pirates Camo jersey for 10(!) dollars. Couldn't pass it up.</p>
-            <figure>
-                <img src="images\Alvarez_Back.jpg">
-                <figcaption>Alvarez had 100 RBIs in 2013, when this jersey was first bought</figcaption>
-            </figure>
-            <figure>
-                <img src="images\PiratesCamo_Front.jpg">
-                <figcaption>Why is "Pirates" floating</figcaption>
-            </figure>
+            <div class="image-row">
+                <figure>
+                    <img src="images/Alvarez_Back.jpg">
+                    <figcaption>Alvarez had 100 RBIs in 2013, when this jersey was first bought</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/PiratesCamo_Front.jpg">
+                    <figcaption>Why is "Pirates" floating</figcaption>
+                </figure>
+            </div>
             <p>As I got deeper and deeper into the hobby, I was after some very hard-to-find jerseys. What I could do, is find blanks, and send them to customizers. That's what I did for a Whalers Andrei Svechnikov and a 2010 Pirates Lastings Milledge. No one is selling these, so I spent an absolutely absurd amount of money to send them in and get them professionally customized.</p>
-            <figure>
-                <img src="images\Svech_Back.jpg">
-                <figcaption>The Canes where Whalers uniforms once a year, honoring the franchises roots</figcaption>
-            </figure>
-            <figure>
-                <img src="images\Milledge_Back.jpg">
-                <figcaption>Lastings Milledge became an inside joke between me and my friends, so I had to get this</figcaption>
-            </figure>
+            <div class="image-row">
+                <figure>
+                    <img src="images/Svech_Back.jpg">
+                    <figcaption>The Canes where Whalers uniforms once a year, honoring the franchises roots</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Milledge_Back.jpg">
+                    <figcaption>Lastings Milledge became an inside joke between me and my friends, so I had to get this</figcaption>
+                </figure>
+            </div>
             <p>That's about where the collection stands for now, apart from a few that don't really fit into this story. I still have plenty on my list, scouting sellers all over the internet. This collection is just getting started.</p>
         </section>
         <section id="schedule">
@@ -211,14 +280,16 @@
         <section id="locations">
             <h2>Where to Collect</h2>
             <p>There are plenty of "locations" for collecting. Obviously, you can go to the stadium or arena to show off parts of your collection, or just wear your jerseys out to lunch. It's up to you where you wanna wear them. On top of physical locations, there are some online communities that I'd also like to include here. There are facebook groups, subreddits, instagram channels, and so many more places that are great locations where collectors can link up and share their collections.  </p>
-            <figure>
-                <img src="images\PNCPark.jpg">
-                <figcaption>Bringing the collection to PNC Park</figcaption>
-            </figure>
-            <figure>
-                <img src="images\Wendys.jpg">
-                <figcaption>Showing out at Wendys</figcaption>
-            </figure>
+            <div class="image-row"></div>
+                <figure>
+                    <img src="images/PNCPark.jpg">
+                    <figcaption>Bringing the collection to PNC Park</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Wendys.jpg">
+                    <figcaption>Showing out at Wendys</figcaption>
+                </figure>
+            </div>
         </section>
         <section id="how">
             <h2>How to Get Started</h2>
@@ -233,24 +304,26 @@
             </ol>
             <p>Congrats! Now you're a jersey collector.</p>
             <figure>
-                <img src="images\Dews.jpg">
+                <img src="images/Dews.jpg">
                 <figcaption>My cousin started with one jersey. Now he has a moneyspread of Penguins gear.</figcaption>
             </figure>
         </section>
         <section id="why">
             <h2>Why Jersey Collecting?</h2>
             <p>There are many reasons to get into jersey collecting, including nostalgia from retro jerseys, connection to your team, but most importantly, I think, the access to the community. Jersey collectors love sharing with eachother, whether it be from buying what they're selling, finding other fans of your teams, or just being complimented by another person in a sick jersey.</p>
-            <figure>
-                <img src="images\Guentzel_Front.jpg">
-                <figcaption>I'm not the biggest Penguins fan, but this is the sickest design on an article of clothing I've ever seen in my life.</figcaption>
-            </figure>
-            <figure>
-                <img src="images\Hawthorn.jpg">
-                <figcaption>Another reason to get into the hobby is so your friends see your dope jersey on the wall.</figcaption>
-            </figure>
+            <div class="image-row">    
+                <figure>
+                    <img src="images/Guentzel_Front.jpg">
+                    <figcaption>I'm not the biggest Penguins fan, but this is the sickest design on an article of clothing I've ever seen in my life.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Hawthorn.jpg">
+                    <figcaption>Another reason to get into the hobby is so your friends see your dope jersey on the wall.</figcaption>
+                </figure>
+            </div>
         </section>
         <section id="ai-prompts">
-            <h2>AI Prompts I Used For This</h2>
+            <h2>Prompts for ChatGPT</h2>
             <p>*copied and pasted the assignment details* -> "make this into a step by step checklist"</p>
             <p>"change it to use a cool color scheme"</p>
             <p>"do another one"</p>
@@ -258,7 +331,9 @@
             <p>"what should my three things be for the how to section" (it did not help me at all with this)</p>
             <p>"are all these p elements in the ai prompts section gonna count as different things"</p>
             <p>*copied and pasted my table* -> "give me the css to make this table have a bold when i bought it column, and so it actually looks like a table"</p>
-            <p>"#031927 #9DD1F1 #508AA8 #C8E0F4 make a css with these colors"</p>
+            <p>"generate a character i can copy and paste of a shirt"</p>
+            <p>"how do i make the navbar centered next to the h1"</p>
+            <p>*copied and pasted the entire thing* -> "what did i miss"</p>
         </section>
     </main>
     <footer>
@@ -266,7 +341,7 @@
     </footer>
     <script>
         function showSection(sectionId){
-            document.querySelectorAll("main section").forEach(section => {
+            document.querySelectorAll("main section").forEach((section) => {
                 section.style.display = "none";
             });
             document.getElementById(sectionId).style.display = "block";
