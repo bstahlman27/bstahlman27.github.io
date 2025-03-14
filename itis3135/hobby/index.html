@@ -15,30 +15,38 @@
         }
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             padding: 15px 30px;
-            background-color: #031927;
         }
         h1, h2 {
             color: #34d399;
             margin: 0;
             font-size: 2em;
+            padding-right: 45px;
         }
         nav {
             display: flex;
-            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding-left: 35px;
+            border-left: 3px solid #bafcdd;
         }
         nav a {
-            color: #a7f3d0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #bafcdd;
             text-decoration: none;
             font-size: 1.2em;
             padding: 8px 12px;
-            transition: color 0.3s ease-in-out;
         }
         nav a:hover {
-            color: #06b6d4;
-            text-shadow: 0 0 8px #06b6d4;
+            color: #040404;
+            background-color: #34d399;
+            border-radius: 5px;
         }
         main {
             max-width: 900px;
@@ -46,7 +54,6 @@
             padding: 20px;
             background-color: #102A27;
             border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(157, 209, 241, 0.3);
         }
         section {
             display: none;
@@ -59,51 +66,45 @@
             margin: 20px 0;
             font-size: 1.1em;
             background-color: #1B2F2D;
-            color: white;
+            color: #bafcdd;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
         th, td {
-            border: 2px solid #508AA8;
+            border: 2px solid #2d423c;
             padding: 10px;
             text-align: left;
         }
         th {
-            background-color: #508AA8;
-            color: white;
+            background-color: #2d423c;
+            color: #bafcdd;
             text-transform: uppercase;
         }
         tr:nth-child(even) {
-            background-color: #C8E0F4;
-            color: #031927;
+            background-color: #397c69;
+            color: #bafcdd;
         }
         tr:nth-child(odd) {
-            background-color: #9DD1F1;
+            background-color: #34d399;
             color: #031927;
         }
-        td:nth-child(4) {
+        td:nth-child(4){
             font-weight: bold;
-            color: #031927;
-            background-color: #9DD1F1;
-        }
-        tr:hover {
-            background-color: #508AA8;
-            color: white;
-            transition: background 0.3s ease-in-out;
+            color: #bafcdd;
+            background-color: #10a077;
         }
         footer {
-            background-color: rgb(116, 19, 19);
-            color: white;
+            color: #bafcdd;
             padding: 15px;
             text-align: center;
             margin-top: 20px;
         }
         footer a {
-            color: #C8E0F4;
+            color: #34d399;
             text-decoration: none;
         }
         footer a:hover {
-            color: #7DD3FC;
-            text-shadow: 0 0 10px #7DD3FC;
+            color: #397c69;
+            text-shadow: 0 0 10px #397c69;
         }
         figure {
             text-align: center;
@@ -115,10 +116,38 @@
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .image-row figure{
+            flex: 1;
+            max-width: 45%;
+            text-align: center;
         }
         .image-row img{
             width: 100%;
-            height: auto;
+            height: 400px;
+            object-fit: cover;
+        }
+        .image-row-3{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        .image-row-3 figure{
+            flex: 1;
+            max-width: 45%;
+            text-align: center;
+        }
+        .image-row-3 img{
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .icon{
+            width: 18px;
+            height: 18px;
         }
     </style>
 </head>
@@ -127,23 +156,23 @@
         <h1>Jersey Collecting</h1>
         <nav>
             <a href="#" onclick="showSection('home')">Home</a>
-            👕
+            <img src="images/tshirt.svg" class="icon" alt="shirt">
             <a href="#" onclick="showSection('about')">My History</a>
-            👕
+            <img src="images/tshirt.svg" class="icon" alt="shirt">
             <a href="#" onclick="showSection('schedule')">Schedule</a>
-            👕
+            <img src="images/tshirt.svg" class="icon" alt="shirt">
             <a href="#" onclick="showSection('locations')">Locations</a>
-            👕
+            <img src="images/tshirt.svg" class="icon" alt="shirt">
             <a href="#" onclick="showSection('how')">How-To</a>
-            👕
+            <img src="images/tshirt.svg" class="icon" alt="shirt">
             <a href="#" onclick="showSection('why')">Why?</a>
-            👕
+            <img src="images/tshirt.svg" class="icon" alt="shirt">
             <a href="#" onclick="showSection('ai-prompts')">AI Prompts</a>
         </nav>
     </header>
     <main>
         <section id="home">
-            <h2>Jersey Collecting</h2>
+            <h2>The Jersey Collecting Hobby</h2>
             <p>Sports fans show their passion for their teams in many different ways, and one of the most common ways is by buying a jersey. More than just a shirt, it's a way to connect with sports, teams, history, and players. Collectors show their fandom by  connecting with other fans, collectors, and community members by wearing their jerseys out, sharing their collection, and spending a ton on a shirt you wear a couple times a year.</p>
             <p>Some people like repping their favorite team or player, while others will go for 32 jerseys to get one from each team in the league. Some people have coat racks full of jerseys, some have one in their closet or hung on their wall. Regardless of our motives and collection so far, jersey collecting is something any sports fan can easily get into.</p>
             <figure>
@@ -163,15 +192,15 @@
                     <img src="images/Necas_Front.jpg">
                     <figcaption>The Hurricanes current Home jersey, their alternates from 2018-2023</figcaption>
                 </figure>
-                <p>Pretty soon after, I got a job, and I started to get some money. It was the summer, so I was watching the Pirates, who are terrible. Have been for years. If I was gonna get a jersey, I was gonna get one from a legend. So I did, a 1971 Roberto Clemente replica. Since we don't live near Pittsburgh, I didn't have much to do with this jersey, so I put it on my wall.</p>
             </div>
+            <p>Pretty soon after, I got a job, and I started to get some money. It was the summer, so I was watching the Pirates, who are terrible. Have been for years. If I was gonna get a jersey, I was gonna get one from a legend. So I did, a 1971 Roberto Clemente replica.</p>
             <figure>
                 <img src="images/Clemente_Back.jpg">
                 <figcaption>Clemente Jersey, replica of the 1971-76 Home uniforms.</figcaption>
             </figure>
             <p>In the NHL, the Hurricanes were finally starting to play well for like the first time in 10 years, so me and my family decided we should finally go back to watch a game in person. At that point, I grew out of all my old Hurricanes merch because they were bad and there was no reason to buy anything else. So I decided I was gonna buy a jersey.</p>
-            <p>My first jersey was a regular replica Sebastian Aho home jersey. It was nice, lasted me a good year or so of wearing to games, but everyone had one. Aho was easily the best player, and the replicas are definitely more affordable than the good stuff. I knew if I spent a little more and went after a little lesser known player, I could stand out more. So on black friday, with all the fun sales, I got another one - a Martin Necas black alternate (this was before he became the goat). Then one thing led to another, the Canes were playing in the Stadium Series, and I had to get one of those. So I did. A Jaccob Slavin, also authentic.</p>
-            <div class="image-row">
+            <p>My first jersey was a regular replica Sebastian Aho home jersey. It was nice, lasted me a good year or so of wearing to games, but everyone had one. Aho was easily the best player, and the replicas are definitely more affordable than the good stuff. I knew if I spent a little more and went after a lesser known player, I'd feel cooler. I. So on black friday, with all the fun sales, I got another one - a Martin Necas black alternate (this was before he became the goat). Then one thing led to another, the Canes were playing in the Stadium Series, and I had to get one of those. So I did. A Jaccob Slavin, also authentic.</p>
+            <div class="image-row-3">
                 <figure>
                     <img src="images/Aho_Back.jpg">
                     <figcaption>Hurricanes used this as their home jersey up until the beginning of the 23-24 season.</figcaption>
@@ -275,11 +304,11 @@
                     <td>Summer 2024</td>
                 </tr>
             </table>
-            <p>As you can see, jersey collecting can be done at any time throughout the year. No need to schedule it.</p>
+            <p>As you can see, jersey collecting can be done at any time throughout the year. However, if you want to collect during a certain season, it's completely up to you. You can put an restrictions you want on it, it's your hobby and your collection.</p>
         </section>
         <section id="locations">
             <h2>Where to Collect</h2>
-            <p>There are plenty of "locations" for collecting. Obviously, you can go to the stadium or arena to show off parts of your collection, or just wear your jerseys out to lunch. It's up to you where you wanna wear them. On top of physical locations, there are some online communities that I'd also like to include here. There are facebook groups, subreddits, instagram channels, and so many more places that are great locations where collectors can link up and share their collections.  </p>
+            <p>There are plenty of "locations" for collecting. Obviously, you can go to the stadium or arena to show off parts of your collection, or just wear your jerseys out to lunch. It's up to you where you wanna wear them. On top of physical locations, there are some online communities that I'd also like to include here. There are facebook groups, subreddits, instagram channels, and so many more places that are great locations where collectors can link up, buy/sell, and share their collections.  </p>
             <div class="image-row">
                 <figure>
                     <img src="images/PNCPark.jpg">
@@ -294,11 +323,11 @@
         <section id="how">
             <h2>How to Get Started</h2>
             <p>Like most hobbies, there's more than one way to get into it. You might see a game and think the jerseys are cool. You might look at be a player and keep your old jerseys. You might be jealous of your cousins collection. Whatever it might be, it's not a hard hobby to get into.</p>
-            <p>While definitely not the only way to do it, I came up with some simple steps for any beginners:</p>
+            <p>While this is definitely not the only way to do it, I came up with some simple steps for any beginners:</p>
             <ol>
-                <li>Buy a jersey for your favorite team</li>
+                <li>Buy a jersey for your favorite team. All collections start with 1.</li>
                 <li>Wear it to a game, or just around</li>
-                <li>Research jerseys. You'll find some of the coolest looking pieces of clothing you'll ever see.</li>
+                <li>Research jerseys. The more you see, the more likely you are the think they're sick.</li>
                 <li>Find other fans, talk jerseys with them</li>
                 <li>Join online communities to see and share</li>
             </ol>
@@ -318,7 +347,7 @@
                 </figure>
                 <figure>
                     <img src="images/Hawthorn.jpg">
-                    <figcaption>Another reason to get into the hobby is so your friends see your dope jersey on the wall.</figcaption>
+                    <figcaption>Another reason to get into the hobby is so your friends see your dope jersey on the wall. They make great wall art.</figcaption>
                 </figure>
             </div>
         </section>
@@ -330,10 +359,16 @@
             <p>"how do i resize large images, theyre like 3000x4000 thats way too big"</p>
             <p>"what should my three things be for the how to section" (it did not help me at all with this)</p>
             <p>"are all these p elements in the ai prompts section gonna count as different things"</p>
+            <p>"write a script that makes the sections hide except the one selected in the navbar, and make sure home is the one that starts open"</p>
             <p>*copied and pasted my table* -> "give me the css to make this table have a bold when i bought it column, and so it actually looks like a table"</p>
             <p>"generate a character i can copy and paste of a shirt"</p>
-            <p>"how do i make the navbar centered next to the h1"</p>
             <p>*copied and pasted the entire thing* -> "what did i miss"</p>
+            <p>"lets make the images be next to each other instead of on top of each other"</p>
+            <p>"how do i put a vertical line between the h1 and the navbar"</p>
+            <p>*copied and pasted the assignment details and this entire index file* -> "did i get everything"</p> 
+            <p>"how do i get a favicon between the navbar links"</p>
+            <p>"the svg is black so you cant see it on my background, how do i change the color"</p>
+            <p>*copied and pasted rubric along with entire index file again* -> "hows this"</p>
         </section>
     </main>
     <footer>
