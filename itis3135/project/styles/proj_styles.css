@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+}
+header{
+    color: navy;
+    background-color: lightgray;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    column-gap: 2rem;
+    border-bottom: 1px solid navy;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+#tagline{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.2rem 0 1rem;
+}
+nav{
+    grid-column: 2;
+    display: flex;
+    gap: 1.5rem;
+}
+nav a{
+    color: navy;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    border: 5px solid transparent;
+}
+nav a:hover{
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 0;
+    background-color: #f0f0f0; /* optional */
+    color: navy;               /* optional */
+    font-weight: bold;         /* optional */
+  }
+  
+#contact-nav{
+    background-color: rgb(36, 175, 36);
+    color: white;
+    font-weight: bold;
+    border: 5px solid green
+}
+#contact-nav:hover{
+    background-color: rgb(62, 212, 62);
+}
+#home {
+    text-align: left;
+    background-image: url("../images/homebg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+#home h2 {
+    color: white;
+    font-size: 75px;
+    margin-bottom: 0.5rem;
+}
+.home-text h3 {
+    color: white;
+    font-size: 27px;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+.home-buttons {
+    display: flex;
+    gap: 1rem;
+}
+#home a {
+    background-color: white;
+    color: navy;
+    text-decoration: none;
+    padding: 25px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#home a:hover {
+    background-color: lightgray;
+}
+  
