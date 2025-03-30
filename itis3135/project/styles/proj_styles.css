@@ -1,24 +1,30 @@
 body{
     margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(5, 5, 70);
+    color: white;
+}
+main{
+    padding: 0 25px 25px
 }
 header{
-    color: navy;
+    color: rgb(5, 5, 70);
     background-color: lightgray;
     display: grid;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     column-gap: 2rem;
-    border-bottom: 1px solid navy;
+    border-bottom: 1px solid rgb(5, 5, 70);
 }
 h1{
-    font-size: 2.5rem;
+    font-size: 50px;
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 0;
 }
 #tagline{
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: bold;
     margin: 0.2rem 0 1rem;
 }
@@ -28,22 +34,26 @@ nav{
     gap: 1.5rem;
 }
 nav a{
-    color: navy;
+    color: rgb(5, 5, 70);
     text-decoration: none;
     font-size: 25px;
+    font-weight: bold;
     padding: 10px;
     border: 5px solid transparent;
 }
 nav a:hover{
-    font-weight: bold;
+    text-decoration: underline;
 }
 footer {
     text-align: center;
     padding: 0;
-    background-color: #f0f0f0; /* optional */
-    color: navy;               /* optional */
-    font-weight: bold;         /* optional */
-  }
+    background-color: lightgray;
+    color: rgb(5, 5, 70);
+    padding: 1px;
+}
+footer p{
+    font-size: 15px;
+}
   
 #contact-nav{
     background-color: rgb(36, 175, 36);
@@ -53,6 +63,7 @@ footer {
 }
 #contact-nav:hover{
     background-color: rgb(62, 212, 62);
+    text-decoration: none;
 }
 #home {
     text-align: left;
@@ -83,7 +94,7 @@ footer {
 }
 #home a {
     background-color: white;
-    color: navy;
+    color: rgb(5, 5, 70);
     text-decoration: none;
     padding: 25px 25px;
     border-radius: 5px;
@@ -92,4 +103,37 @@ footer {
 #home a:hover {
     background-color: lightgray;
 }
-  
+h2{
+    font-size: 40px;
+    margin: 
+}
+h3{
+    font-size: 30px;
+}
+p, ul{
+    font-weight: bold;
+    font-size: 22px;
+}
+#info-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.info-box{
+    background-color: lightgray;
+    color: rgb(5, 5, 70);
+    padding: 1rem 40px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    width: 300px;
+}
+.info-box h3, .info-box p, .info-box ul{
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+.info-box h3{
+    border-bottom: 4px solid rgb(5, 5, 70);
+    text-align: center;
+    padding-bottom: 15px;
+}
