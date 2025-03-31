@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(5, 5, 70);
     color: white;
 }
@@ -22,6 +22,13 @@ h1{
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 0;
+    transform: skew(-5deg);
+}
+.bomb-icon{
+    height: 1em;
+    vertical-align:middle;
+    padding-bottom: 11px;
+    margin-right: -0.12em;
 }
 #tagline{
     font-size: 20px;
@@ -40,6 +47,7 @@ nav a{
     font-weight: bold;
     padding: 10px;
     border: 5px solid transparent;
+    transform: skew(-5deg);
 }
 nav a:hover{
     text-decoration: underline;
@@ -54,12 +62,23 @@ footer {
 footer p{
     font-size: 15px;
 }
-  
+h2{
+    font-size: 40px;
+    transform: skew(-5deg)
+}
+h3{
+    font-size: 30px;
+}
+p, ul{
+    font-size: 22px;
+    line-height: 1.5;
+} 
 #contact-nav{
     background-color: rgb(36, 175, 36);
     color: white;
     font-weight: bold;
-    border: 5px solid green
+    border: 5px solid green;
+    transform: skew(0deg);
 }
 #contact-nav:hover{
     background-color: rgb(62, 212, 62);
@@ -102,17 +121,6 @@ footer p{
 }
 #home a:hover {
     background-color: lightgray;
-}
-h2{
-    font-size: 40px;
-    margin: 
-}
-h3{
-    font-size: 30px;
-}
-p, ul{
-    font-weight: bold;
-    font-size: 22px;
 }
 #info-container{
     display: flex;
