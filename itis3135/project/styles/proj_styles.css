@@ -3,11 +3,17 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(5, 5, 70);
     color: white;
+    overflow-y: scroll;
 }
 main{
-    padding: 0 25px 25px
+    padding: 100px 25px 25px
 }
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     color: rgb(5, 5, 70);
     background-color: lightgray;
     display: grid;
@@ -39,6 +45,7 @@ nav{
     grid-column: 2;
     display: flex;
     gap: 1.5rem;
+    padding-right: 60px;
 }
 nav a{
     color: rgb(5, 5, 70);
@@ -128,6 +135,41 @@ p, ul{
     gap: 2rem;
     justify-content: center;
 }
+.info-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+    gap: 2rem;
+    border-top: 4px solid white;
+    padding-top: 30px;
+}
+.info-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.info-image img{
+    max-height: 400px;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+}
+.info-image figcaption, a{
+    font-size: 7px;
+    color: white;
+    text-align: center;
+}
+.info-section .info-box{
+    min-height: 400px; 
+    background-color: rgb(5, 5, 70);
+    color: white;
+}
+.info-section .info-box h3{
+    font-size: 40px;
+}
 .info-box{
     background-color: lightgray;
     color: rgb(5, 5, 70);
@@ -135,13 +177,46 @@ p, ul{
     border-radius: 10px;
     flex: 1 1 250px;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .info-box h3, .info-box p, .info-box ul{
     margin-top: 0;
     margin-bottom: 0.75rem;
 }
 .info-box h3{
-    border-bottom: 4px solid rgb(5, 5, 70);
+    border-bottom: 3px solid rgb(5, 5, 70);
     text-align: center;
     padding-bottom: 15px;
+}
+.info-box, .info-image{
+    width: 50%;
+    box-sizing: border-box
+}
+.info-section .info-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+.info-section .info-box li {
+    background-color: white;
+    color: rgb(5, 5, 70);
+    padding: 2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-section.right-text{
+    flex-direction: row-reverse;
+}
+.info-section.left-text{
+    flex-direction: row;
 }
