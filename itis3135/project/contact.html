@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BOMB Tutoring and Taxes | Contact/Schedule</title>
+    <link rel="stylesheet" href="styles/proj_styles.css">
+    <link rel="icon" type="image/ico" href="images/bombfavicon.ico">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+       <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Contact/Schedule</h2>
+        <p>Select a time slot that works for you: </p>
+        <section id="calendar-container"></section>
+        <section id="contact-section">
+            <div id="contact-row">
+                <div class="contact-box">
+                    <h3>Contact Info</h3>
+                    <p>
+                        <a href="mailto:aew5771@psu.edu">aew5771@psu.edu</a><br>
+                        (814) 249-2523<br>
+                        State College, PA<br>
+                    </p>
+                </div>
+                <div class="contact-box">
+                    <h3>Get in Touch</h3>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required />
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" required />
+                        <label for="message">Message:</label>
+                        <textarea id="message" required rows="4"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: aew5771@psu.edu | 140 Curtin Road | Page built By Ben Stahlman </p>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/contactScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BOMB Tutoring and Taxes | Appointment Info</title>
+    <link rel="stylesheet" href="styles/proj_styles.css">
+    <link rel="icon" type="image/ico" href="images/bombfavicon.ico">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+       <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <div id="appointment-container">
+            <h2>Appointment Info</h2>
+            <div id="info-container">
+                <div class="info-box">
+                    <h3 id="appointment-header"></h3>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required />
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required />
+                        <legend>Service:</legend>
+                        <label for="tutoring"><input type="radio" id="tutoring" name="service" required/>Tutoring</label>
+                        <label for="tax"><input type="radio" id="tax" name="service"/>Taxes</label>
+                        <div id="class-list" style="display: none; margin-top: 1rem;">
+                            <label>Select your subject(s)</label><br />
+                            <label><input type="checkbox" value="Algebra" />Algebra</label><br />
+                            <label><input type="checkbox" value="Geometry" />Geometry</label><br />
+                            <label><input type="checkbox" value="Trigonometry" />Trigonometry</label><br />
+                            <label><input type="checkbox" value="Calculus" />Calculus</label><br />
+                            <label><input type="checkbox" value="Accounting" />Accounting</label><br />
+                        </div>
+                        <label for="query">What are you having trouble with?</label>
+                        <textarea type="text" id="query" rows="3" required></textarea>
+                        <label for="message">Anything else you'd like to add:</label>
+                        <textarea type="text" id="message" rows="3"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Contact: aew5771@psu.edu | 140 Curtin Road | Page built By Ben Stahlman </p>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
