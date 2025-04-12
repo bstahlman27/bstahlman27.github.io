@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Stahlman's Blind Seagull || Slideshow</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main id="slideshow">
+        <h2>Slideshow</h2>
+        <div class="slide-container">
+            <div class="slides">
+                <div class="number-text">1/11</div>
+                <img src="images/backpack.png" alt="backpack">
+            </div>
+            <div class="slides">
+                <div class="number-text">2/11</div>
+                <img src="images/elephant.png" alt="elephant">
+            </div>
+            <div class="slides">
+                <div class="number-text">3/11</div>
+                <img src="images/narwhal.png" alt="narwhal">
+            </div>
+            <div class="slides">
+                <div class="number-text">4/11</div>
+                <img src="images/snake.png" alt="snake">
+            </div>
+            <div class="slides">
+                <div class="number-text">5/11</div>
+                <img src="images/tree.png" alt="tree">
+            </div>
+            <div class="slides">
+                <div class="number-text">6/11</div>
+                <img src="images/airplane.png" alt="airplane">
+            </div>
+            <div class="slides">
+                <div class="number-text">7/11</div>
+                <img src="images/hockeystick.png" alt="hockey stick">
+            </div>
+            <div class="slides">
+                <div class="number-text">8/11</div>
+                <img src="images/lake.png" alt="lake">
+            </div>
+            <div class="slides">
+                <div class="number-text">9/11</div>
+                <img src="images/mountain.png" alt="mountain">
+            </div>
+            <div class="slides">
+                <div class="number-text">10/11</div>
+                <img src="images/alpaca.png" alt="alpaca">
+            </div>
+            <div class="slides">
+                <div class="number-text">11/11</div>
+                <img src="images/nail.png" alt="nail">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/backpack.png" style="width: 100%" onclick="currentSlide(1)" alt="B - for Backpack">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/elephant.png" style="width: 100%" onclick="currentSlide(2)" alt="E - for Elephant">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/narwhal.png" style="width: 100%" onclick="currentSlide(3)" alt="N - for Narwhal">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/snake.png" style="width: 100%" onclick="currentSlide(4)" alt="S- for Snake">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/tree.png" style="width: 100%" onclick="currentSlide(5)" alt="T - for Tree">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/airplane.png" style="width: 100%" onclick="currentSlide(6)" alt="A - for Airplane">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/hockeystick.png" style="width: 100%" onclick="currentSlide(7)" alt="H - for Hockey stick">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/lake.png" style="width: 100%" onclick="currentSlide(8)" alt="L- for Lake">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/mountain.png" style="width: 100%" onclick="currentSlide(9)" alt="M - for Mountain">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/alpaca.png" style="width: 100%" onclick="currentSlide(10)" alt="A - for Alpaca">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/nail.png" style="width: 100%" onclick="currentSlide(11)" alt="N - for Nail">
+                </div>
+            </div>
+        </div>
+        <h3>Notes</h3>
+        <p>I used the w3schools link as a guide for this slideshow. I changed a couple class names, used a little bit different styles, and changed the html and js to work with accumulus. I didn't copy and paste anything.</p>
+        <p>I used ChatGPT for the images, here are my prompts: </p>
+        <ul>
+            <li>"generate a pic of a backpack in landscape orientation"</li>
+            <li>"now do one of an elephant, landscape"</li>
+            <li>"now do one of a narwhal"</li>
+            <li>"do one of a snake"</li>
+            <li>"now a tree"</li>
+            <li>"now an airplane"</li>
+            <li>"now do a hockey stick"</li>
+            <li>"now do a lake"</li>
+            <li>"now do a mountain"</li>
+            <li>"now do an alpaca"</li>
+            <li>"now do a nail"</li>
+        </ul>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html>
