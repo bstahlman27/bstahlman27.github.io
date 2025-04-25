@@ -86,5 +86,23 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       calendarContainer.appendChild(dayBox);
     }
+
+
+    const pins = document.querySelectorAll(".map-container .pin");
+    const tooltip = document.getElementById("map-tooltip");
+
+    pins.forEach((pin) => {
+      pin.addEventListener("mouseenter", (e) => {
+        const rect = pin.getBoundingClientRect();
+        const mapRect = pin.closest(".map-container").getBoundingClientRect();
+        tooltip.textContent = pin.dataset.location;
+        tooltip.style.tip = `${rect.top - mapRect.top - 10}px`;
+        tooltip.style.left = `${rect.left - mapRect.left + 20}px`;
+        tooltip.style.display = "block";
+      });
+      pin.addEventListener("mouseleave", () => {
+        tooltip.style.display = "none";
+      });
+    });
   });
   

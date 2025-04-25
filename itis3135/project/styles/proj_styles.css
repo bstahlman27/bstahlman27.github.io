@@ -341,3 +341,34 @@ form button {
     width: 75%;
     margin: 0 auto;
 }
+.map-container {
+    position: relative;
+    display: inline-block;
+}
+.map-conatiner img{
+    display: block;
+    max-width: 100%;
+}
+.pin{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(36, 175, 36);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+.tooltip{
+    position: absolute;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    display: none;
+    z-index: 3;
+}
+.contact-box .map-container{
+    display: flex;
+    justify-content: center;
+}
