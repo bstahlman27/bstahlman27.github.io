@@ -6,7 +6,7 @@ body {
     overflow-y: scroll;
 }
 main {
-    padding: 100px 25px 25px;
+    padding: 100px 25px 25px 50px;;
 }
 header {
     position: fixed;
@@ -257,7 +257,7 @@ main a:hover {
 }
 #calendar-container .info-box h4 {
     margin: 0 0 0.5rem;
-    font-size: 1.25rem;
+    font-size: 0px;
     text-align: center;
 }
 #calendar-container .info-box ul {
