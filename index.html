@@ -87,13 +87,13 @@
 		}
 		.card-links-row a{
 			flex: 1 1 48%;
-		text-align: center;
-		color: white;
-		font-weight: bold;
-		border-radius: 6px;
-		padding: 0.75rem 1rem;
-		border: 1px solid #40f99b;
-		box-sizing: border-box;
+			text-align: center;
+			color: white;
+			font-weight: bold;
+			border-radius: 6px;
+			padding: 0.75rem 1rem;
+			border: 1px solid #40f99b;
+			box-sizing: border-box;
 		}
 		.card-link{
 			display: block;
@@ -103,11 +103,30 @@
 			border-radius: 6px;
 			padding: 0.75rem 1rem;
 			border: 1px solid #40f99b;
+			overflow: hidden;
 		}
 		.card-link:hover{
 			background-color: #40f99b;
 			color:#030213;
 			transition: background-color 0.3s ease;
+		}
+		.card-desc{
+			display: block;
+			max-height: 0;
+			overflow: hidden;
+			font-size: 0.8rem;
+			font-weight: normal;
+			color: #ccc;
+			transition: max-height 0.4s ease, margin-top 0.3s ease, opacity 0.3s ease;
+			opacity: 0;
+			margin-top: 0;
+			text-align: center;
+		}
+		.card-link:hover .card-desc{
+			max-height: 60px;
+			opacity: 1;
+			margin-top: 6px;
+			color: #030213;
 		}
 		@media screen and (min-width: 600px) and (max-width: 980px){
     		main{
@@ -148,21 +167,46 @@
 		<div class="projects-section">
 			<h3>Projects</h3>
 			<div class="card">
+				<h4>Web Projects</h4>
+				<div class="card-links-row">
+					<a href="https://bstahlman27.github.io/bathroom-finder/" class="card-link">Gotta Go Bathroom Finder
+						<span class="card-desc">A web app to find nearby public bathrooms.</span>
+					</a>
+				</div>
+			</div>
+			<div class="card">
 				<h4>GitHub Repositories</h4>
 				<div class="card-links-row">
-					<a href="https://github.com/bstahlman27/hotel-management-api-project" class="card-link">Hotel Management API</a>
-					<a href="https://github.com/bstahlman27/Bowling-Scorer" class="card-link">Bowling Scorer</a>
-					<a href="https://github.com/bstahlman27/Menu-Organizer" class="card-link">Menu Organizer</a>
+					<a href="https://github.com/bstahlman27/bathroom-finder" class="card-link">Bathroom Finder
+						<span class="card-desc">Code + previous versions of the bathroom finder app.</span>
+					</a>
+					<a href="https://github.com/bstahlman27/hotel-management-api-project" class="card-link">Hotel Management API
+						<span class="card-desc">A backend for managing functions in a hotel.</span>
+					</a>
+					<a href="https://github.com/bstahlman27/Bowling-Scorer" class="card-link">Bowling Scorer
+						<span class="card-desc">A program that lets you keep track of you and your friends bowling scores.</span>
+					</a>
+					<a href="https://github.com/bstahlman27/Menu-Organizer" class="card-link">Menu Organizer
+						<span class="card-desc">A program that takes user input for menu items and displays it in a fully formatted menu.</span>
+					</a>
+					<a href="https://github.com/bstahlman27/bstahlman27.github.io" class="card-link">This Page</a>
 				</div>
 			</div>	
 			<div class="card">
 				<h4>ITIS 3135 Websites</h4>
 				<div class="card-links-row">
-					<a href = "itis3135/" class="card-link">ITIS3135 Course Site</a>
-					<a href = "blindseagullsunglasses/" class="card-link">blindseagullsunglasses</a>
-					<a href="stahlmaninternational.com" class="card-link">stahlmaninternational</a>
-					<a href="itis3135/hobby/" class="card-link">Hobby Page</a>
-					<a href="itis3135/project/index.html" class="card-link">Client Project</a>
+					<a href = "itis3135/" class="card-link">ITIS3135 Course Site
+						<span class="card-desc">Home page with links to every web assignment from ITIS 3135.</span>
+					</a>
+					<a href="stahlmaninternational.com" class="card-link">stahlmaninternational
+						<span class="card-desc">My fake business.</span>
+					</a>
+					<a href="itis3135/hobby/" class="card-link">Hobby Page
+						<span class="card-desc">Interactive webpage showcasing my jersey collection.</span>
+					</a>
+					<a href="itis3135/project/index.html" class="card-link">Client Project
+						<span class="card-desc">A webpage for my friends Tutoring/Tax services.</span>
+					</a>
 				</div>
 			</div>
 			<div class="card">
